@@ -27,14 +27,31 @@ public class Main {
 //        System.out.println(studentName + " has now a gpa of:" + studentGpa);
 
         //second example fortune teller
-        System.out.println("Pick a number between 1 and 10 ");
-        Scanner scanner = new Scanner(System.in);
-        int inputtedNumber = scanner.nextInt();
-        if (inputtedNumber < 5 ){
-            System.out.println("Enjoy the good luck a friend brings you");
-        } else {
-            System.out.println("your show selection will make you very happy");
-        }
+//        System.out.println("Pick a number between 1 and 10 ");
+//        Scanner scanner = new Scanner(System.in);
+//        int inputtedNumber = scanner.nextInt();
+//        if (inputtedNumber < 5 ){
+//            System.out.println("Enjoy the good luck a friend brings you");
+//        } else {
+//            System.out.println("your show selection will make you very happy");
+//        }
 
+
+        //third example
+
+        Scanner input = new Scanner(System.in);
+        boolean isOnRepeat = true;
+        while (isOnRepeat) {
+
+            System.out.println("playing current song");
+
+            System.out.println("would you like to take this song off repeat? If so, answer yes");
+            String userInput = input.next();
+
+            if (userInput.equals("yes")) {
+                isOnRepeat = false;
+            }
+        }
+        System.out.println("playing next song");
     }
 }
