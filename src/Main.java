@@ -39,19 +39,50 @@ public class Main {
 
         //third example
 
+//        Scanner input = new Scanner(System.in);
+//        boolean isOnRepeat = true;
+//        while (isOnRepeat) {
+//
+//            System.out.println("playing current song");
+//
+//            System.out.println("would you like to take this song off repeat? If so, answer yes");
+//            String userInput = input.next();
+//
+//            if (userInput.equals("yes")) {
+//                isOnRepeat = false;
+//            }
+//        }
+//        System.out.println("playing next song");
+
+
+        //challenge
+
+        String question = "What does CSS stands for?";
+        String answerOne = "Cosco salsa salsa";
+        String answerTwo = "champion source soul";
+        String answerThree = "Cascade style sheet";
+
+        String correctAnswer = answerThree;
+
+        //write a print statement asking a question
+        //write a print statement giving the choices
+        System.out.println(question);
+        System.out.println(answerOne);
+        System.out.println(answerTwo);
+        System.out.println(answerThree);
+
+//        have the user input an answer
+//        retrieve the users input
+
         Scanner input = new Scanner(System.in);
-        boolean isOnRepeat = true;
-        while (isOnRepeat) {
+        String userInput = input.nextLine();
 
-            System.out.println("playing current song");
+        System.out.println(userInput);
 
-            System.out.println("would you like to take this song off repeat? If so, answer yes");
-            String userInput = input.next();
-
-            if (userInput.equals("yes")) {
-                isOnRepeat = false;
-            }
+        if (correctAnswer.equals(userInput)){
+            System.out.println("correct");
+        } else {
+            System.out.println("try again");
         }
-        System.out.println("playing next song");
     }
 }
