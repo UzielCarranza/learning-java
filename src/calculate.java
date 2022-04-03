@@ -8,6 +8,8 @@ public class calculate {
         return result;
     }
     public static void main (String [] args){
-        calculateTotalMealPrice(15, .2, .08);
+       double groupTotalMealPrice = calculateTotalMealPrice(15, .2, .08);
+       System.out.println(groupTotalMealPrice);
+
     }
 }
