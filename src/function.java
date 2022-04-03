@@ -10,6 +10,6 @@ public class function {
         System.out.println("its developer tea time");
     }
     public static void main(String[] args){
-
+        announceDeveloperTeaTime();
     }
 }
