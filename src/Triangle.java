@@ -15,5 +15,8 @@ public class Triangle {
         this.sideLenThree = sideLenThree;
 
     }
+    public double findArea(){
+
+    }
 
 }
