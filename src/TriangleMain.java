@@ -6,6 +6,10 @@ public class TriangleMain {
         Triangle triangleB = new Triangle(3, 2.598, 3, 3, 3 );
 
         double triangleAArea = triangleA.findArea();
-        System.out.printls(triangleAArea);
+        System.out.println(triangleAArea);
+
+
+        double triangleBArea = triangleB.findArea();
+        System.out.println(triangleBArea);
     }
 }
